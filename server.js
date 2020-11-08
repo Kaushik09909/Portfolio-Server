@@ -34,6 +34,10 @@ app.get('/download', function(req, res) {
   res.sendFile(__dirname + '/public/Kaushik_Kumar_Resume.pdf')
 });
 
+app.get('/', function(req, res) {
+  res.sendStatus(200);
+})
+
 app.listen(8000, function() {
     console.log('App running on port 8000');
 });
